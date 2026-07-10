@@ -1,0 +1,233 @@
+{
+  "plant_id": "dns7s",
+  "series": {
+    "p_in_Н-1": {
+      "n": 14729,
+      "period": [
+        "2026-01-01 14:59:40",
+        "2026-05-15 02:07:07"
+      ],
+      "n_nan": 1,
+      "n_zero": 1,
+      "zero_fraction": 0.0001,
+      "dup_timestamps": 0,
+      "value_min": 0.0,
+      "value_median": 0.392,
+      "value_max": 1.009
+    },
+    "p_in_Н-2": {
+      "n": 1648,
+      "period": [
+        "2026-01-03 10:42:47",
+        "2026-05-14 18:10:08"
+      ],
+      "n_nan": 0,
+      "n_zero": 1,
+      "zero_fraction": 0.0006,
+      "dup_timestamps": 0,
+      "value_min": 0.0,
+      "value_median": 0.393,
+      "value_max": 1.249
+    },
+    "p_in_Н-3": {
+      "n": 13909,
+      "period": [
+        "2026-01-01 14:24:35",
+        "2026-05-15 02:00:50"
+      ],
+      "n_nan": 0,
+      "n_zero": 1,
+      "zero_fraction": 0.0001,
+      "dup_timestamps": 0,
+      "value_min": 0.0,
+      "value_median": 0.39,
+      "value_max": 1.01
+    },
+    "p_in_Н-4": {
+      "n": 19526,
+      "period": [
+        "2026-01-01 14:59:40",
+        "2026-05-15 02:00:02"
+      ],
+      "n_nan": 0,
+      "n_zero": 0,
+      "zero_fraction": 0.0,
+      "dup_timestamps": 91,
+      "value_min": 0.002,
+      "value_median": 0.392,
+      "value_max": 1.01
+    },
+    "p_out_Н-1": {
+      "n": 2798,
+      "period": [
+        "2026-01-01 15:29:39",
+        "2026-05-15 08:48:51"
+      ],
+      "n_nan": 0,
+      "n_zero": 2,
+      "zero_fraction": 0.0007,
+      "dup_timestamps": 0,
+      "value_min": 0.0,
+      "value_median": 0.424,
+      "value_max": 3.27
+    },
+    "p_out_Н-2": {
+      "n": 14461,
+      "period": [
+        "2026-01-01 08:53:02",
+        "2026-05-15 08:48:11"
+      ],
+      "n_nan": 0,
+      "n_zero": 2,
+      "zero_fraction": 0.0001,
+      "dup_timestamps": 0,
+      "value_min": 0.0,
+      "value_median": 1.369,
+      "value_max": 3.411
+    },
+    "p_out_Н-3": {
+      "n": 12711,
+      "period": [
+        "2026-01-01 15:30:19",
+        "2026-05-15 08:47:59"
+      ],
+      "n_nan": 0,
+      "n_zero": 1,
+      "zero_fraction": 0.0001,
+      "dup_timestamps": 0,
+      "value_min": 0.0,
+      "value_median": 2.192,
+      "value_max": 3.394
+    },
+    "p_out_Н-4": {
+      "n": 34601,
+      "period": [
+        "2026-01-01 09:13:10",
+        "2026-05-15 08:49:55"
+      ],
+      "n_nan": 0,
+      "n_zero": 2,
+      "zero_fraction": 0.0001,
+      "dup_timestamps": 0,
+      "value_min": 0.0,
+      "value_median": 2.429,
+      "value_max": 3.448
+    },
+    "flow": {
+      "n": 26914,
+      "period": [
+        "2026-01-01 09:13:10",
+        "2026-05-15 08:52:48"
+      ],
+      "n_nan": 0,
+      "n_zero": 130,
+      "zero_fraction": 0.0048,
+      "dup_timestamps": 0,
+      "value_min": 0.0,
+      "value_median": 79.365,
+      "value_max": 126.313
+    },
+    "level_be1": {
+      "n": 61390,
+      "period": [
+        "2026-01-01 09:02:27",
+        "2026-05-15 08:59:25"
+      ],
+      "n_nan": 0,
+      "n_zero": 0,
+      "zero_fraction": 0.0,
+      "dup_timestamps": 0,
+      "value_min": 540.757,
+      "value_median": 1399.56,
+      "value_max": 2452.16
+    },
+    "level_be2": {
+      "n": 499,
+      "period": [
+        "2026-02-13 09:36:22",
+        "2026-04-21 11:09:45"
+      ],
+      "n_nan": 0,
+      "n_zero": 0,
+      "zero_fraction": 0.0,
+      "dup_timestamps": 0,
+      "value_min": 71.209,
+      "value_median": 1447.03,
+      "value_max": 2792.09
+    }
+  },
+  "journals": {
+    "Н-1": {
+      "events_raw": 240,
+      "events_dedup": 126,
+      "duplicates_removed": 114,
+      "runtime_hours": 52.4,
+      "starts": 63
+    },
+    "Н-2": {
+      "events_raw": 284,
+      "events_dedup": 144,
+      "duplicates_removed": 140,
+      "runtime_hours": 151.4,
+      "starts": 72
+    },
+    "Н-3": {
+      "events_raw": 200,
+      "events_dedup": 102,
+      "duplicates_removed": 98,
+      "runtime_hours": 949.2,
+      "starts": 51
+    },
+    "Н-4": {
+      "events_raw": 6504,
+      "events_dedup": 3282,
+      "duplicates_removed": 3222,
+      "runtime_hours": 1870.9,
+      "starts": 1641
+    }
+  },
+  "balances": {
+    "volume": {
+      "overlap_days": 135,
+      "uuj_total": 160356.5,
+      "fact_total": 176025.0,
+      "residual_total": -15668.5,
+      "residual_pct_median": -8.6,
+      "note": "положительная невязка → УУЖ показывает больше учёта (рециркуляция/простои)"
+    },
+    "energy": {
+      "totals_kwh": {
+        "Н-1": 1707.4,
+        "Н-2": 1572.6,
+        "Н-3": 29089.7,
+        "Н-4": 186550.9
+      },
+      "shares": {
+        "Н-1": 0.0078,
+        "Н-2": 0.0072,
+        "Н-3": 0.1329,
+        "Н-4": 0.8521
+      },
+      "grand_total_kwh": 218920.6
+    },
+    "sec_fact": {
+      "overlap_period": [
+        "2026-01-01 00:00:00",
+        "2026-05-15 00:00:00"
+      ],
+      "energy_kwh": 218920.5,
+      "volume_transfer_m3": 176025.0,
+      "volume_uuj_m3": 160356.5,
+      "sec_fact_by_transfer": 1.244,
+      "sec_fact_by_uuj": 1.365,
+      "note": "УРЭ_факт по перекачке — приоритетный (ближе к учёту)"
+    }
+  },
+  "transfer_gaps": {
+    "n": 362,
+    "span_days": 363,
+    "missing_dates": 1,
+    "missing_fraction": 0.0028
+  },
+  "flags": []
+}
