@@ -17,12 +17,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # каталог
 
 import lib  # noqa: E402  data-слой (настраивает путь к src/)
 import streamlit as st  # noqa: E402
-
-
-pwd = st.text_input("Пароль", type="password")
-if pwd != st.secrets.get("app_password"):
-    st.stop()
-  
 import ui  # noqa: E402  дизайн-система (CSS + компоненты)
 from tabs import (formulas, losses, measures, new_object, overview,  # noqa: E402
                   quality, scheme, working_point)
@@ -30,6 +24,23 @@ from tabs.common import WATER_EMOJI, Ctx, fmt  # noqa: E402
 
 st.set_page_config(page_title="Энергоаудит ППД", page_icon="⚡", layout="wide")
 ui.inject_css()
+
+# ───────────────────────── Доступ по паролю ─────────────────────────
+# Показываем форму один раз за сессию; после верного пароля она исчезает
+# и больше не пересчитывает страницу на каждый нажатый символ.
+
+if not st.session_state.get("_authed", False):
+    st.markdown("### 🔒 Доступ к дашборду")
+    with st.form("_login", clear_on_submit=False):
+        pwd = st.text_input("Пароль", type="password")
+        ok = st.form_submit_button("Войти")
+    if ok:
+        if pwd == st.secrets.get("app_password", None):
+            st.session_state["_authed"] = True
+            st.rerun()
+        else:
+            st.error("Неверный пароль.")
+    st.stop()
 
 # ───────────────────────── Sidebar: выбор объекта ─────────────────────────
 
