@@ -17,6 +17,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # каталог
 
 import lib  # noqa: E402  data-слой (настраивает путь к src/)
 import streamlit as st  # noqa: E402
+
+
+pwd = st.text_input("Пароль", type="password")
+if pwd != st.secrets.get("app_password"):
+    st.stop()
+  
 import ui  # noqa: E402  дизайн-система (CSS + компоненты)
 from tabs import (formulas, losses, measures, new_object, overview,  # noqa: E402
                   quality, scheme, working_point)
